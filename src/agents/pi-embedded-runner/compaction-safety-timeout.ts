@@ -1,7 +1,7 @@
 import type { OpenClawConfig } from "../../config/config.js";
 import { withTimeout } from "../../node-host/with-timeout.js";
 
-export const EMBEDDED_COMPACTION_TIMEOUT_MS = 1_800_000;
+export const EMBEDDED_COMPACTION_TIMEOUT_MS = 900_000;
 
 export function resolveCompactionTimeoutMs(cfg?: OpenClawConfig): number {
   const raw = cfg?.agents?.defaults?.compaction?.timeoutSeconds;

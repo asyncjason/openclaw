@@ -1042,7 +1042,7 @@ export const FIELD_HELP: Record<string, string> = {
   "agents.defaults.compaction.postCompactionSections":
     'AGENTS.md H2/H3 section names re-injected after compaction so the agent reruns critical startup guidance. Leave unset to use "Session Startup"/"Red Lines" with legacy fallback to "Every Session"/"Safety"; set to [] to disable reinjection entirely.',
   "agents.defaults.compaction.timeoutSeconds":
-    "Maximum time in seconds allowed for a single compaction operation before it is aborted (default: 1800). Increase this for very large sessions that need more time to summarize, or decrease it to fail faster on unresponsive models.",
+    "Maximum time in seconds allowed for a single compaction operation before it is aborted (default: 900). Increase this for very large sessions that need more time to summarize, or decrease it to fail faster on unresponsive models.",
   "agents.defaults.compaction.model":
     "Optional provider/model override used only for compaction summarization. Set this when you want compaction to run on a different model than the session default, and leave it unset to keep using the primary agent model.",
   "agents.defaults.compaction.memoryFlush":
